@@ -451,23 +451,20 @@ select {
 .ag-theme-quartz {
   --ag-font-family: var(--font-family);
   --ag-font-size: 13px;
-
   --ag-header-height: 44px;
   --ag-row-height: 54px;
 
   --ag-border-color: transparent;
-  --ag-row-border-color: var(--color-border-light);
+  --ag-row-border-color: #f1f2f5;
+  --ag-row-border-width: 1px;
 
   --ag-background-color: #ffffff;
   --ag-header-background-color: #ffffff;
   --ag-odd-row-background-color: #ffffff;
-
   --ag-foreground-color: var(--color-text);
   --ag-header-foreground-color: var(--color-text-secondary);
-
   --ag-selected-row-background-color: #f7f8ff;
 }
-
 
 /* =========================================================
    AG GRID OUTER FRAME
@@ -487,10 +484,15 @@ select {
    AG GRID HEADER
 ========================================================= */
 
-.ag-theme-quartz .ag-header {
+/* .ag-theme-quartz .ag-header {
   border-bottom: 1px solid var(--color-border-light) !important;
-}
+} */
 
+
+
+.ag-theme-quartz .ag-header {
+  border-bottom: 1px solid #eef0f4 !important;
+}
 .ag-theme-quartz .ag-header-cell {
   padding-left: 16px;
   padding-right: 16px;
